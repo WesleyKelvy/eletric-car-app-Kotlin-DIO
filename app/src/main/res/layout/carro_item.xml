@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:outlineProvider="none"
+        android:paddingVertical="10dp"
+        app:cardBackgroundColor="#DADADA"
+        app:cardCornerRadius="20dp"
+        app:contentPadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cv_car_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_favorite"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="n"
+                android:focusable="true"
+                android:src="@drawable/ic_star"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <ImageView
+                android:id="@+id/car_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eletric_car"
+                app:layout_constraintStart_toStartOf="@id/cv_car_content"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_preco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="60dp"
+                android:text="Preço"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/car_image" />
+
+            <TextView
+                android:id="@+id/tv_preco_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="R$300.000,00"
+                app:layout_constraintStart_toEndOf="@id/tv_preco"
+                app:layout_constraintTop_toBottomOf="@id/car_image" />
+
+            <TextView
+                android:id="@+id/tv_bateria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="60dp"
+                android:textStyle="bold"
+
+                android:text="Bateria"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_preco" />
+
+            <TextView
+                android:id="@+id/tv_bateria_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="300 kWh"
+                app:layout_constraintStart_toEndOf="@+id/tv_bateria"
+                app:layout_constraintTop_toTopOf="@id/tv_bateria" />
+
+            <TextView
+                android:id="@+id/tv_potencia"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+
+                android:layout_height="wrap_content"
+                android:width="60dp"
+                android:text="Potencia"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_bateria" />
+
+            <TextView
+                android:id="@+id/tv_potencia_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="300 cv"
+                app:layout_constraintStart_toEndOf="@id/tv_potencia"
+
+                app:layout_constraintTop_toTopOf="@id/tv_potencia" />
+
+            <TextView
+                android:id="@+id/tv_recarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="60dp"
+                android:textStyle="bold"
+
+                android:text="Recarga"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_potencia" />
+
+            <TextView
+                android:id="@+id/tv_recarga_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="23 min"
+                app:layout_constraintStart_toEndOf="@id/tv_recarga"
+                app:layout_constraintTop_toTopOf="@id/tv_recarga" />
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btn_calcular"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="72dp"-->
+            <!--                android:background="#4EC2C2C2"-->
+            <!--                android:paddingHorizontal="16sp"-->
+            <!--                android:text="Ver autonomia"-->
+            <!--                app:layout_constraintEnd_toEndOf="@id/car_image"-->
+            <!--                app:layout_constraintTop_toTopOf="@id/tv_bateria_value" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

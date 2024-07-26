@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">eletric car app</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="carros">Carros</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_wifi">Sem Conexão! Por favor conectar a Internet!</string>
+    <string name="response_error">Algo deu errado, tente novamente mais tarde!</string>
+    <string name="saved_calc">Saved_calc</string>
+
+
+</resources>
